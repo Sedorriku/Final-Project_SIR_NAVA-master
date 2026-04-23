@@ -54,6 +54,16 @@ namespace Final_Project
 
         private async void button1_Click(object sender, EventArgs e)
         {
+                var user1 = "Cedric"; var pass1 = "Perez@01"; var email1 = "cedricperez@gmail.com";
+            var user2 = "John"; var pass2 = "Canas@02"; var email2 = "johncanas@gmail.com";
+            var user3 = "Edwin"; var pass3 = "Russel@03"; var email3 = "edwindu@gmail.com";
+            var user4 = "Darrel"; var pass4 = "Bartolo@04"; var email4 = "darrelbartolo@gmail.com";
+            var user5 = "Sabian"; var pass5 = "Bautista@05"; var email5 = "sabianbautista@gmail.com";
+            if (!string.IsNullOrEmpty(user) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(pass) && !string.IsNullOrEmpty(confimpass))
+            {
+                if (pass == confimpass)
+                {
+
             using (HttpClient client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Clear();
